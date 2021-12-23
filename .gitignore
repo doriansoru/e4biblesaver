@@ -1,0 +1,10 @@
+# Offline elements
+/offline/
+/build/
+/dist/
+/__pycache__/
+
+# Miscellaneous
+*.spec
+*.sh
+my-screensaver
