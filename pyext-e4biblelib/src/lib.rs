@@ -41,8 +41,9 @@ fn get_verse() -> Result<String, Error> {
 }
 
 #[pymodule]
-fn e4biblelib(py: Python, m: &PyModule) -> PyResult<()> {
-    #[pyfn(m, "get_verse")]
+fn e4biblelib(_py: Python, m: &PyModule) -> PyResult<()> {
+    #[pyfn(m)]
+    #[pyo3(name="get_verse")]
     fn get_verse_py(_py: Python) -> PyResult<String> {
         let formatted_verse = get_verse();
         Ok(formatted_verse.unwrap())
