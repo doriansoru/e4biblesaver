@@ -1,0 +1,13 @@
+[package]
+name = "e4biblelib"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+name = "e4biblelib"
+crate-type = ["dylib"]
+
+[dependencies]
+easy_reader = "0.5"
+pyo3 = "0.15"
+rand = "0.8"
