@@ -3,12 +3,13 @@ import math, random
 import re
 import time
 import tkinter as tk
+from os import getenv
 import e4biblelib
 
 # Factors to resize text
 MAX_VERSE_LEN_FACTOR = 41472
 FONT_SIZE_FACTOR = 59245
-
+    
 class E4BibleSaver():	
 	def __init__(self):
 		global FONT_SIZE_FACTOR, MAX_VERSE_LEN_FACTOR
